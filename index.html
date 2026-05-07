@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="crud-card">
+      <h2>Foydalanuvchilar Ro'yxati</h2>
+
+      <!-- Ma'lumot qo'shish qismi -->
+      <form id="c-user" class="input-group">
+        <input
+          type="text"
+          name="name"
+          id="nameInput"
+          placeholder="Foydalanuvchi ismi..."
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="emailInput"
+          placeholder="Email manzili..."
+          required
+        />
+        <input type="checkbox" name="status" />
+        <button class="btn-add">Qo'shish</button>
+      </form>
+
+      <!-- Jadval qismi -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>#ID</th>
+              <th>Ism va Familiya</th>
+              <th>Email</th>
+              <th>Holati</th>
+              <th>Amallar</th>
+            </tr>
+          </thead>
+          <tbody id="userList">
+            <!-- O'quvchilaringiz shu yerga JavaScript orqali tr/td larni generatsiya qilishadi -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="modal" class="modal-one hidden">
+      <i class="fa-solid fa-xmark"></i>
+      <h2>Foydalanuvchilar Ro'yxati</h2>
+
+      <!-- Ma'lumot qo'shish qismi -->
+      <form id="c-userr" class="input-group">
+        <input
+          type="text"
+          name="name"
+          id="editName"
+          placeholder="Foydalanuvchi ismi..."
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="editEmail"
+          placeholder="Email manzili..."
+          required
+        />
+        <input type="checkbox" name="status" />
+        <button class="btn-add">Qo'shish</button>
+      </form>
+      </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

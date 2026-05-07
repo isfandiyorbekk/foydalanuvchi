@@ -1,0 +1,132 @@
+
+:root {
+  --primary: #4a90e2;
+  --success: #2ecc71;
+  --danger: #e74c3c;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 0;
+  position: relative;
+}
+
+.crud-card {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  color: var(--dark);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.btn-add {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #357abd;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--light);
+  color: var(--dark);
+  text-align: left;
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #f1f2f6;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.btn-delete {
+  background-color: var(--danger);
+  color: white;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  background: #dfe6e9;
+  text-transform: capitalize;
+}
+.modal-one {
+  position: absolute;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.hidden {
+  display: none;
+}
